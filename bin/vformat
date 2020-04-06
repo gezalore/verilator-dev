@@ -1,0 +1,31 @@
+#!/bin/bash
+
+BIN_DIR=$(readlink -f $(dirname $BASH_SOURCE))
+
+VERILOG_MODE_EL=$BIN_DIR/verilog-mode.el
+
+process () {
+  emacs --batch -Q -l $VERILOG_MODE_EL $1 \
+    --eval "(setq-default indent-tabs-mode nil)" \
+    -f verilog-batch-indent -f verilog-batch-auto
+}
+
+if [[ $# -eq 0 ]]; then
+  # If no input files specified, process standard input and exit
+  TMP=$(mktemp vvormat.XXX.stdin.sv)
+  trap "rm -f $TMP" EXIT
+  cat <&0 > $TMP
+  process $TMP |& \
+    grep -v -E "^(Processing|Saving|Wrote).*stdin.sv" | \
+    grep -v "^Indenting" | \
+    grep -v "No changes need to be saved"
+  cat $TMP
+  exit 0
+elif [[ $# -eq 1 ]]; then
+  # Else process first file
+  process $1
+  exit 0
+else
+  echo "ERROR: too many arguments" 1>&2
+  exit 1
+fi
