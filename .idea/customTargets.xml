@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CLionExternalBuildManager">
+    <target id="5ba20d38-f4cd-440d-9dd7-9eabab501c9f" name="opt" projectName="verilator">
+      <configuration id="951c57b1-4928-401f-93b3-9be1a1ee4280" name="opt" toolchainName="Default">
+        <build type="TOOL">
+          <tool actionId="Tool_External Tools_make" />
+        </build>
+        <clean type="TOOL">
+          <tool actionId="Tool_External Tools_make clean" />
+        </clean>
+      </configuration>
+    </target>
+  </component>
+</project>
