@@ -4,7 +4,17 @@
     <target id="5ba20d38-f4cd-440d-9dd7-9eabab501c9f" name="opt" projectName="verilator">
       <configuration id="951c57b1-4928-401f-93b3-9be1a1ee4280" name="opt" toolchainName="Default">
         <build type="TOOL">
-          <tool actionId="Tool_External Tools_make" />
+          <tool actionId="Tool_External Tools_make opt" />
+        </build>
+        <clean type="TOOL">
+          <tool actionId="Tool_External Tools_make clean" />
+        </clean>
+      </configuration>
+    </target>
+    <target id="91f706ed-9265-4d0d-a867-c54ee822a061" name="dbg" projectName="verilator">
+      <configuration id="7c0ad033-1ad8-49d8-9493-5dbda5c03f86" name="dbg" toolchainName="Default">
+        <build type="TOOL">
+          <tool actionId="Tool_External Tools_make dbg" />
         </build>
         <clean type="TOOL">
           <tool actionId="Tool_External Tools_make clean" />

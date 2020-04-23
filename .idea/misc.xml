@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="CidrRootsConfiguration">
+    <excludeRoots>
+      <file path="$PROJECT_DIR$/install" />
+      <file path="$PROJECT_DIR$/src/examples" />
+      <file path="$PROJECT_DIR$/src/src/obj_dbg" />
+      <file path="$PROJECT_DIR$/src/test_regress" />
+    </excludeRoots>
+  </component>
   <component name="CompDBSettings">
     <option name="linkedExternalProjectsSettings">
       <CompDBProjectSettings>
@@ -9,7 +17,6 @@
             <option value="$PROJECT_DIR$" />
           </set>
         </option>
-        <option name="useAutoImport" value="true" />
       </CompDBProjectSettings>
     </option>
   </component>
