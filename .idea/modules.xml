@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/gl.work.verilator.iml" filepath="$PROJECT_DIR$/.idea/gl.work.verilator.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/verilator.iml" filepath="$PROJECT_DIR$/.idea/verilator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/verilator2.iml" filepath="$PROJECT_DIR$/.idea/verilator2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/work.verilator.iml" filepath="$PROJECT_DIR$/.idea/work.verilator.iml" />
     </modules>
   </component>
 </project>

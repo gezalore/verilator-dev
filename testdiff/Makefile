@@ -1,5 +1,5 @@
 
-TEST_REGRESS := ../src/test_regress
+TEST_REGRESS := ../repo/test_regress
 
 SNAPSHOT := ./snapshot
 
