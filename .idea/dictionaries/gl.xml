@@ -2,6 +2,7 @@
   <dictionary name="gl">
     <words>
       <w>combinational</w>
+      <w>cutable</w>
       <w>semilattice</w>
       <w>verilator</w>
     </words>
